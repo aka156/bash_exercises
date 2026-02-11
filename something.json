@@ -1,0 +1,34 @@
+"SRT": {
+    "TRADE_DATE": {
+        "hardcoded": "Trade Date",
+        "code": "temp_df['Trade Date']"
+    },
+    "BUY_SELL": {
+        "hardcoded": "Buy / Sell",
+        "code": "temp_df['Buy / Sell']"
+    },
+    "PUT_CALL": {
+        "hardcoded": "Put / Call",
+        "code": "temp_df['Put / Call']"
+    },
+    "STRIKE_PRICE": {
+        "hardcoded": "Strike",
+        "code": "temp_df['Strike']"
+    },
+    "PRICE": {
+        "hardcoded": "Trade Price",
+        "code": "temp_df['Trade Price']"
+    },
+    "MATURITY_DATE": {
+        "hardcoded": "Expiration",
+        "code": "temp_df['Expiration']"
+    },
+    "SYMBOL": {
+        "hardcoded": "Symbol",
+        "code": "temp_df['Symbol']"
+    },
+    "QUANTITY": {
+        "hardcoded": "Volume Traded",
+        "code": "temp_df['Volume Traded']"
+    }
+}
