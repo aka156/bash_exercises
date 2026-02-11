@@ -1,0 +1,33 @@
+#!/bin/bash
+echo "Moving TJM files..."
+
+shopt -s nocasematch
+
+INCOMING_DIR="incoming/fixed_income"
+PROCESSING_DIR="processing/fixed_income"
+
+TODAY_DASH=$(date +"%-m.%d.%y")
+TODAY_UNDER=$(date +"%m_%d_%y")
+
+
+find "$INCOMING_DIR" -type f \
+    \( -name "*$TODAY_DASH*.csv" -o -name "*$TODAY_DASH*.xlsx" \) |
+while IFS= read -r FILE
+do
+    BASENAME=$(basename "$FILE")
+    EXT="${BASENAME##*.}"
+
+    if [[ ! "$BASENAME" =~ TJM ]]; then
+        continue
+    fi
+
+    PREFIX=$(echo "$BASENAME" | sed 's/[[:space:]]TJM.*//')
+    TYPE="TJM"
+
+    NEW_NAME="${PREFIX}_${TYPE}_${TODAY_UNDER}.${EXT}"
+    NEW_NAME=$(echo "$NEW_NAME" | tr ' ' '_')
+
+    mv -n "$FILE" "$PROCESSING_DIR/$NEW_NAME"
+    echo "Moved: $BASENAME → $NEW_NAME"
+done
+

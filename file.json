@@ -1,0 +1,34 @@
+"SRT": {
+    "Trade Date": {
+        "hardcoded": "Trade Date",
+        "code": "TRADE_DATE"
+    },
+    "Buy / Sell": {
+        "hardcoded": "Buy / Sell",
+        "code": "BUY_SELL"
+    },
+    "Put / Call": {
+        "hardcoded": "Put / Call",
+        "code": "PUT_CALL"
+    },
+    "Strike": {
+        "hardcoded": "Strike",
+        "code": "STRIKE_PRICE"
+    },
+    "Trade Price": {
+        "hardcoded": "Trade Price",
+        "code": "PRICE"
+    },
+    "Expiration": {
+        "hardcoded": "Expiration",
+        "code": "MATURITY_DATE"
+    },
+    "Symbol": {
+        "hardcoded": "Symbol",
+        "code": "SYMBOL"
+    },
+    "Volume Traded": {
+        "hardcoded": "Volume Traded",
+        "code": "QUANTITY"
+    }
+}
