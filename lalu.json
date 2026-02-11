@@ -29,6 +29,4 @@
     },
     "PRICE": {
         "hardcoded": "Trade Price",
-        "code": "temp_df['Trade Price'].astype(str)"
-    }
-}
+        "code": "
